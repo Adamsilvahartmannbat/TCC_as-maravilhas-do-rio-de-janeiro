@@ -1,0 +1,131 @@
+/* Importação de fontes (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* --- Reset Básico e Estilos Gerais --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6; /* Fundo claro */
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Header (Cabeçalho) --- */
+header {
+    background: linear-gradient(135deg, #ddedff, #0056b3); /* Azul vibrante */
+    color: white;
+    padding: 60px 0 40px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* --- Main (Conteúdo Principal) --- */
+main {
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #320f78;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+/* --- Seção de Destaques (Cards) --- */
+.destaques {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 100%;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #000000; /* Detalhe amarelo/dourado */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    color: #12263c;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.localizacao {
+    color: #000000; /* Verde para localização */
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+/* --- Seção de Pontos Turísticos --- */
+.pontos-turisticos ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.pontos-turisticos li {
+    background-color: #e9ecef;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #495057;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.pontos-turisticos li:hover {
+    background-color: #ced4da;
+}
+
+/* --- Footer (Rodapé) --- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9em;
+}

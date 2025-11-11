@@ -1,0 +1,218 @@
+/*=====================================
+  ESTILOS GERAIS
+=======================================*/
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+    
+    /* 1. PROPRIEDADES DA IMAGEM DE FUNDO */
+    background-image: url('URL_DA_SUA_FOTO_DE_PRAIA_AQUI'); /* <-- SUBSTITUA ESTE LINK */
+    background-size: cover; /* Garante que a imagem cubra todo o body */
+    background-attachment: fixed; /* Fixa a imagem no lugar enquanto você rola a página */
+    background-position: center center;
+    
+    /* 2. CAMADA DE SOBREPOSIÇÃO (OVERLAY) */
+    /* Cria uma camada escura ou translúcida sobre a imagem para o texto ser legível */
+    /* O '::before' é usado para criar essa camada */
+}
+
+/* Camada de Sobreposição para clarear ou escurecer a imagem de fundo e garantir legibilidade */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Cor e Transparência: Cinza claro quase branco (F7F9FC) com 90% de opacidade */
+    background-color: rgba(247, 249, 252, 0.9); 
+    z-index: -1; /* Coloca a camada atrás do conteúdo */
+}
+
+/*=====================================
+  CONTAINER PRINCIPAL (IMPORTANTE!)
+=======================================*/
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0;
+    /* Torna o container semi-transparente ou branco para destacar o conteúdo */
+    background: rgba(224, 255, 231, 0.95); /* Branco com 95% de opacidade */
+    padding: 30px 40px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/*=====================================
+  (Mantenha os estilos dos títulos e elementos interativos aqui)
+  H1, H2, HERO, CURIOSIDADES, FOOTER, etc.
+=======================================*/
+
+h1 {
+    color: #004c99;
+    text-align: center;
+    font-size: 3.2em;
+    font-weight: 800;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 6px solid #10114f;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 4px rgba(0, 76, 153, 0.2);
+}
+
+h2 {
+    color: #007bff;
+    font-size: 2.2em;
+    border-left: 8px solid #3cb371;
+    padding-left: 18px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h3 {
+    color: #3cb371;
+    font-size: 1.5em;
+    margin-top: 0;
+    transition: color 0.3s ease;
+}
+
+.curiosidade:hover h3 {
+    color: #004c99;
+}
+
+hr {
+    border: none;
+    height: 4px;
+    background: linear-gradient(to right, #ffffff, #ffdb58, #ffffff);
+    margin: 40px 0;
+}
+
+header {
+    width: 100%;
+    background-color: #007bff; 
+    color: white;
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 76, 153, 0.6);
+}
+
+.logo {
+    color: #586bff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+nav ul li a:hover {
+    color: #ffdb58;
+}
+
+nav ul li a::after {
+    background-color: #ffdb58;
+}
+
+.hero {
+    background: linear-gradient(135deg, #004c99, #007bff);
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 25px rgba(0, 76, 153, 0.5);
+}
+
+.hero h1 {
+    color: white;
+    border-bottom: none;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.curiosidade {
+    margin-bottom: 30px;
+    padding: 25px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.curiosidade:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(60, 179, 113, 0.3);
+    background-color: #f7fffb;
+    border-left: 8px solid #13225b;
+}
+
+.curiosidade h3 i {
+    color: #007bff;
+    margin-right: 12px;
+    font-size: 1.4em;
+    transition: transform 0.3s ease;
+}
+
+.curiosidade:hover h3 i {
+    color: #3cb371;
+    transform: rotate(5deg);
+}
+
+.foto-container {
+    text-align: center;
+    margin: 50px 0;
+    padding: 25px;
+    background-color: #fffff0;
+    border-radius: 15px;
+    border: 3px dashed #ffdb58;
+    box-shadow: 0 0 20px rgba(255, 219, 88, 0.5);
+}
+
+.foto {
+    max-width: 65%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+    border: 8px solid white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.foto:hover {
+    transform: scale(1.05);
+    border-color: #3cb371;
+}
+
+.foto-container p {
+    color: #444;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    padding: 25px 0;
+    border-top: 5px solid #ffdb58;
+    margin-top: 50px;
+    color: rgb(172, 255, 124);
+    background-color: #004c99;
+    border-radius: 0 0 20px 20px;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+#contato {
+    background-color: #e6ffe6;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #007bff;
+    border: 2px solid #3cb371;
+}

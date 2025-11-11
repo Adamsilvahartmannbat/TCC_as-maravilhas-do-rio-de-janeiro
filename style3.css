@@ -1,0 +1,98 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: rgb(255, 253, 253);
+    color: rgb(0, 0, 0);
+}
+header{
+    background: rgb(6, 6, 48);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1{
+    margin: 0;
+    font-size: 2.5;
+}
+
+header p{
+    font-size: 1.2rem;
+}
+
+section{
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2{
+    color: rgb(22, 22, 41);
+      }
+
+ul{
+    list-style: square;
+    margin-left: 20px;
+    align-items: center; /* Centraliza verticalmente os itens */
+    display: flex; /* Alinha os itens em linha (lado a lado) */
+    margin-right: 20px; /* Adiciona um espaço à direita da imagem */
+    box-shadow: 0 3px 15px rgb(2, 0, 127);
+}
+
+button {
+    background: rgb(15, 41, 118);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+button:hover{
+    background: rgb(188, 182, 255);
+}
+
+.detalhes {
+    display: none;
+    margin-top: 15px;
+    padding: 15px;
+    background: white;
+    border-left: 5px solid blue;
+    border-radius: 5px;
+}
+
+.card{
+    background: #03536d;
+    align-items: center;
+    padding: 40px;
+    width: 240px;
+    box-shadow: 0 3px 15px rgb(2, 0, 127);
+    padding: 8px 15px;
+    background-color: #3498db;
+
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 40px;
+      background-color: #b0b3ff;
+}
+
+.card:houver {
+    transform: scale(1.05);
+}
+.card img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.card a:houver {
+    background: #03536d;
+}

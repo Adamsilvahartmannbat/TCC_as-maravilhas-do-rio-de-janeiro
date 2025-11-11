@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagens Incríveis - Descubra o Mundo</title>
+    <link rel="stylesheet" href="style6.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="logo">Viagens **vermelho**</div>
+        <ul class="nav-links">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#destinos">Destinos</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Abrir Menu"><i class="fas fa-bars"></i></button>
+    </nav>
+
+    <header id="home" class="hero">
+        <h1>Site de viagens !</h1>
+        <p>Explore o mundo com guias especializados e pacotes inesquecíveis.</p>
+        <a href="#destinos" class="btn-cta">Descubra Já!</a>
+    </header>
+
+    <section id="destinos" class="section-padding">
+        <h2>Destinos em Destaque</h2>
+
+
+        <div id="praia" class="tab-content active-content">
+            <div class="card">
+                <img src="kaka.jpg" alt="Maldivas">
+                <h3>copacabana</h3>
+                <p>O paraíso tropical que você sonhava.</p>
+            </div>
+            <div class="card">
+                <img src="rio.jpg" alt="Noronha">
+                <h3>ipanema</h3>
+                <p>Mergulhe nas águas mais claras do Brasil.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="galeria" class="section-padding bg-light">
+        <h2>Praias inesqueciveis</h2>
+        <div class="galeria-grid">
+            <img src="kkkk.jfif" alt="Foto Viagem 1" onclick="openModal('Foto 1 - Vista Aérea');">
+            <img src="keke.jpg" alt="Foto Viagem 2" onclick="openModal('Foto 2 - Pôr do Sol');">
+            <img src="kaka.jpg" alt="Foto Viagem 3" onclick="openModal('Foto 3 - Casal na Neve');">
+        </div>
+    </section>
+
+    <div id="imageModal" class="modal">
+        <span class="close-btn">&times;</span>
+        <img class="modal-content" id="imgDisplay">
+        <div id="caption"></div>
+    </div>
+
+    <section id="contato" class="section-padding bg-dark">
+        <h2>Não Perca Nossas Ofertas!</h2>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Viagens **vermelho** . Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

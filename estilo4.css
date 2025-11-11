@@ -1,0 +1,31 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: rgb(255, 253, 253);
+    color: rgb(0, 0, 0);
+}
+header{
+    background: rgb(6, 6, 48);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+header h1{
+    margin: 0;
+    font-size: 2.5;
+}
+header p{
+    font-size: 1.2rem;
+}
+section{
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+h2{
+    color: rgb(22, 22, 41);
+}
+ul{
+    list-style: square;
+    margin-left: 20px;
+}
